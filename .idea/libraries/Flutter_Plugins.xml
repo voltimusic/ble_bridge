@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_midi_command_windows-0.1.1" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_midi_command_linux-0.3.0" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/universal_ble-0.9.11" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_midi_command-0.5.3" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
