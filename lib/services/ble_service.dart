@@ -7,7 +7,7 @@ class BleService {
   bool _didAskForBluetoothPermissions = false;
 
   final Function(List<MidiDevice>) onBluetoothDevicesUpdated;
-  final Function(String) onLog;
+  final Function(MidiPacket) onLog;
 
   BleService({
     required this.onBluetoothDevicesUpdated,
@@ -22,12 +22,50 @@ class BleService {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Please Grant Bluetooth Permissions to discover BLE MIDI Devices.'),
-          content: const Text('In the next dialog we might ask you for Bluetooth permissions.\nPlease grant permissions to make Bluetooth MIDI possible.'),
-          actions: <Widget>[
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12), // Match the dialog's rounded corners
+          ),
+          titlePadding: EdgeInsets.zero, // Remove default title padding
+          title: Container(
+            padding: EdgeInsets.all(16), // Add internal padding for the text
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color(0xFF105FB9), // Dark Blue
+                  Color(0xFF16D9F3), // Cyan
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(12), // Match the dialog's rounded corners
+              ),
+            ),
+            child: Text(
+              'Please Grant Bluetooth Permissions',
+              style: TextStyle(
+                color: Colors.white, // White text for better contrast
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          content: const Text(
+            'In the next dialog we might ask you for Bluetooth permissions.\nPlease grant permissions to make Bluetooth MIDI possible.',
+          ),
+          actions: [
+            // Ok Button (Blue)
             TextButton(
-              child: const Text('Ok. I got it!'),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.blue, // Blue background
+                foregroundColor: Colors.white, // White text
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8), // Add padding
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8), // Rounded corners
+                ),
+              ),
               onPressed: () => Navigator.of(context).pop(),
+              child: Text('Ok. I got it!'),
             ),
           ],
         );
@@ -42,7 +80,7 @@ class BleService {
     if (kDebugMode) print("Start BLE central");
 
     await _midiCommand.startBluetoothCentral().catchError((err) {
-      onLog("Bluetooth Error: $err");
+
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(err)));
     });
 
@@ -56,7 +94,7 @@ class BleService {
 
     if (_midiCommand.bluetoothState == BluetoothState.poweredOn) {
       _midiCommand.startScanningForBluetoothDevices().catchError((err) {
-        onLog("Scanning Error: $err");
+
       });
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Scanning for Bluetooth devices ...')));
     } else {

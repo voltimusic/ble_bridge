@@ -110,12 +110,6 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "flutter_virtual_piano",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/flutter_virtual_piano-0.0.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.16"
-    },
-    {
       "name": "flutter_web_bluetooth",
       "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/flutter_web_bluetooth-0.2.4",
       "packageUri": "lib/",
@@ -296,7 +290,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-02-22T20:56:57.309675Z",
+  "generated": "2025-02-23T02:28:48.591964Z",
   "generator": "pub",
   "generatorVersion": "3.5.1",
   "flutterRoot": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1",

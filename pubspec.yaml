@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_midi_command: ^0.5.3
   provider: ^6.0.0  # Use the latest version available
-  flutter_virtual_piano: ^0.0.8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -59,6 +59,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - assets/background.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
