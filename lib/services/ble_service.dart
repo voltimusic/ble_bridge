@@ -2,20 +2,28 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_midi_command/flutter_midi_command.dart';
 
+import '../MidiService.dart';
+
 class BleService {
   final MidiCommand _midiCommand = MidiCommand();
   bool _didAskForBluetoothPermissions = false;
 
   final Function(List<MidiDevice>) onBluetoothDevicesUpdated;
   final Function(MidiPacket) onLog;
+  final MidiService midiService; // Add reference to MidiService
 
   BleService({
     required this.onBluetoothDevicesUpdated,
     required this.onLog,
+    required this.midiService, // Inject MidiService
   });
 
   Future<void> _informUserAboutBluetoothPermissions(BuildContext context) async {
-    if (_didAskForBluetoothPermissions) return;
+    if (_didAskForBluetoothPermissions)
+      {
+
+        return;
+      }
 
     await showDialog<void>(
       context: context,
@@ -112,5 +120,7 @@ class BleService {
         content: Text(messages[_midiCommand.bluetoothState] ?? 'Unknown Bluetooth state: ${_midiCommand.bluetoothState}'),
       ));
     }
+
+    midiService.updateListDevicers();
   }
 }

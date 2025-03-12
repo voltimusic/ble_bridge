@@ -1,10 +1,29 @@
+import 'dart:io';
+
+import 'package:ble_reciever/safty/MacOSSecurity.dart';
+import 'package:ble_reciever/safty/SecurityWarningScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'HomePage.dart';
 import 'MidiLog.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (   !Platform.isMacOS)
+    {
+      // ✅ Only run security checks on macOS
+      String? securityError = await MacOSSecurity.runSecurityChecks();
+      if (securityError != null) {
+        runApp(SecurityErrorScreen(errorMessage: securityError));
+        return;
+      }
+    }
+
+
+  // ✅ If not macOS, or security checks pass, run app normally
   runApp(
     MultiProvider(
       providers: [
@@ -14,7 +33,6 @@ void main() {
     ),
   );
 }
-
 
 class MyApp extends StatelessWidget {
   @override

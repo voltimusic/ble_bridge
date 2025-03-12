@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/FlutterMidiCommand/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/FlutterMidiCommand/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/FlutterMidiCommand/build" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/linux/flutter/ephemeral/.plugin_symlinks/flutter_midi_command_linux/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/linux/flutter/ephemeral/.plugin_symlinks/flutter_midi_command_linux/.pub" />

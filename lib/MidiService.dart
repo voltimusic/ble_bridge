@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_midi_command/flutter_midi_command.dart';
 import 'package:flutter/foundation.dart';
 
@@ -6,6 +8,7 @@ class MidiService {
   final Function(List<MidiDevice>) onBluetoothDevicesUpdated;
   final Function(MidiPacket) onLog;
   final MidiCommand _midiCommand = MidiCommand();
+  StreamSubscription<BluetoothState>? _bluetoothStateSubscription;
   bool isLoggingEnabled = false; // Add logging state
   // Message filter: Track which types of messages should be logged
   Set<String> messageFilters = {
@@ -24,44 +27,71 @@ class MidiService {
     required this.onLog,
   });
 
+  Future<List<MidiDevice>?> updateListDevicers()
+  async {
+    List<MidiDevice>? devices = await _midiCommand.devices;
+
+    if (devices != null) {
+      List<MidiDevice> filteredDevices = devices
+          .where((device) => device.type.toLowerCase() != 'ble')
+          .toList();
+      List<MidiDevice> bleFilteredDevices = devices
+          .where((device) => device.type.toLowerCase() == 'ble')
+          .toList();
+
+      onDevicesUpdated(filteredDevices);
+      onBluetoothDevicesUpdated(bleFilteredDevices);
+    }
+  }
   void init() {
     // Listen for device setup changes & update UI
     _midiCommand.onMidiSetupChanged?.listen((_) async {
-      List<MidiDevice>? devices = await _midiCommand.devices;
-
-      if (devices != null) {
-        List<MidiDevice> filteredDevices = devices
-            .where((device) => device.type.toLowerCase() != 'ble')
-            .toList();
-        List<MidiDevice> bleFilteredDevices = devices
-            .where((device) => device.type.toLowerCase() == 'ble')
-            .toList();
-
-        onDevicesUpdated(filteredDevices);
-        onBluetoothDevicesUpdated(bleFilteredDevices);
-      }
+      updateListDevicers();
     });
 
-    _midiCommand.onBluetoothStateChanged.listen((_) async {});
+    _bluetoothStateSubscription =
+        _midiCommand.onBluetoothStateChanged.listen((data) {
+          if (kDebugMode) {
+            print("bluetooth state change $data");
+          }
+        });
 
     // Listen for incoming MIDI messages and forward them
     _midiCommand.onMidiDataReceived?.listen((packet) {
       final List<int> midiBytes = packet.data;
-      if(midiBytes.length==1)
-        {
-          return;
-        }
 
-
-
-      // Get the mapped target device for this BLE device
-      String? targetDeviceId = bleDeviceMapping[packet.device.id];
-
-      if (targetDeviceId != null) {
-        _midiCommand.sendData(packet.data,deviceId:targetDeviceId);
+      // Ignore single-byte messages
+      if (midiBytes.length == 1) {
+        return;
       }
-      // Check if logging is enabled before calling onLog
-      // Check if logging is enabled and the message type is allowed
+
+      String deviceId = packet.device.id;
+      String deviceType = packet.device.type.toLowerCase(); // Normalize case
+
+      String? targetDeviceId;
+
+      if (deviceType == "own-virtual") {
+        // Find the key where the value matches packet.device.id
+        targetDeviceId = bleDeviceMapping.entries
+            .firstWhere(
+              (entry) => entry.value == deviceId,
+          orElse: () => MapEntry("", ""),
+        )
+            .key;
+
+        if (targetDeviceId.isEmpty) {
+          return; // Exit if no matching key is found
+        }
+      } else {
+        // Regular mapping for non-virtual devices
+        targetDeviceId = bleDeviceMapping[deviceId];
+      }
+
+      if (targetDeviceId != null && targetDeviceId.isNotEmpty) {
+        _midiCommand.sendData(packet.data, deviceId: targetDeviceId);
+      }
+
+      // Check if logging is enabled and log message if needed
       if (isLoggingEnabled && _shouldLogMessage(packet.data)) {
         onLog(packet);
       }

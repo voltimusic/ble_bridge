@@ -1,5 +1,20 @@
 # This is a generated file; do not edit or check into version control.
-flutter_midi_command=/Users/medmusic/.pub-cache/hosted/pub.dev/flutter_midi_command-0.5.3/
+flutter_midi_command=/Users/medmusic/projects/voltimusic/ble_bridge/FlutterMidiCommand-master/
 flutter_midi_command_linux=/Users/medmusic/.pub-cache/hosted/pub.dev/flutter_midi_command_linux-0.3.0/
 flutter_midi_command_windows=/Users/medmusic/.pub-cache/hosted/pub.dev/flutter_midi_command_windows-0.1.1/
+path_provider_linux=/Users/medmusic/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/medmusic/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+shared_preferences=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences-2.5.2/
+shared_preferences_android=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.6/
+shared_preferences_foundation=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/
+shared_preferences_linux=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.1/
+shared_preferences_web=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_web-2.4.3/
+shared_preferences_windows=/Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
 universal_ble=/Users/medmusic/.pub-cache/hosted/pub.dev/universal_ble-0.9.11/
+url_launcher=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+url_launcher_android=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.14/
+url_launcher_ios=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.2/
+url_launcher_linux=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+url_launcher_macos=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+url_launcher_web=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_web-2.3.3/
+url_launcher_windows=/Users/medmusic/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/

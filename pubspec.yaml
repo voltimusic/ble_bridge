@@ -34,9 +34,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  flutter_midi_command: ^0.5.3
+  flutter_midi_command:
+    path: FlutterMidiCommand-master
   provider: ^6.0.0  # Use the latest version available
-
+  font_awesome_flutter: ^10.8.0
+  flutter_rating_bar: ^4.0.1
+  shared_preferences: ^2.5.2
+  url_launcher: ^6.3.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -61,6 +65,7 @@ flutter:
 
   assets:
     - assets/background.png
+    - assets/logo.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

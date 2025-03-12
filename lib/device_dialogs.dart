@@ -1,6 +1,8 @@
 import 'package:ble_reciever/widgets/HoverableCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_midi_command/flutter_midi_command.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class DeviceDialogs {
   static void showDisconnectDialog(
@@ -349,6 +351,99 @@ Future<bool> showLoggingWarningDialog(BuildContext context) async {
       );
     },
   ) ?? false; // Return false if the dialog is dismissed
+
 }
+
+void  showReviewPopup(BuildContext context) {
+  double rating = 0; // Stores the selected rating
+  TextEditingController feedbackController = TextEditingController(); // Stores user input
+
+  showDialog(
+    context: context,
+    builder: (context) {
+      return AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12), // ✅ Rounded corners
+        ),
+        title: const Text(
+          "Rate Our App",
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // Star Rating
+            RatingBar.builder(
+              initialRating: 0,
+              minRating: 1,
+              direction: Axis.horizontal,
+              allowHalfRating: true,
+              itemCount: 5,
+              itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+              itemBuilder: (context, _) => const Icon(
+                Icons.star,
+                color: Colors.amber, // ✅ Star color
+              ),
+              onRatingUpdate: (newRating) {
+                rating = newRating;
+              },
+            ),
+            const SizedBox(height: 10),
+
+            // Feedback Text Field
+            TextField(
+              controller: feedbackController,
+              decoration: InputDecoration(
+                labelText: "Tell us what you think",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8), // ✅ Rounded text field
+                ),
+              ),
+              maxLines: 3,
+            ),
+          ],
+        ),
+        actions: [
+          // Cancel Button
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text("Cancel"),
+          ),
+
+          // Submit Button
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue, // ✅ Submit button color
+            ),
+            onPressed: () async {
+              SharedPreferences prefs = await SharedPreferences.getInstance();
+              await prefs.setBool("hasReviewed", true); // ✅ Save review flag
+
+              print("User Rating: $rating");
+              print("User Feedback: ${feedbackController.text}");
+
+              // ✅ Show Thank You Message
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text("Thank you for your feedback!"),
+                  duration: Duration(seconds: 2),
+                ),
+              );
+
+              Navigator.of(context).pop(); // ✅ Close the popup
+            },
+            child: const Text("Submit"),
+          ),
+
+        ],
+      );
+    },
+  );
+}
+
+
+
 
 
