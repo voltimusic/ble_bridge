@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "args",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/args-2.6.0",
+      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/args-2.7.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -75,15 +75,9 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1/packages/flutter",
+      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.4/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.3"
-    },
-    {
-      "name": "flutter_lints",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.1"
     },
     {
       "name": "flutter_midi_command",
@@ -99,7 +93,7 @@
     },
     {
       "name": "flutter_midi_command_platform_interface",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/flutter_midi_command_platform_interface-0.4.2",
+      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/flutter_midi_command_platform_interface-0.4.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -117,7 +111,7 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1/packages/flutter_test",
+      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.4/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -129,7 +123,7 @@
     },
     {
       "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1/packages/flutter_web_plugins",
+      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.4/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -162,12 +156,6 @@
       "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.2"
-    },
-    {
-      "name": "lints",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/lints-4.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.1"
     },
     {
       "name": "logging",
@@ -261,7 +249,7 @@
     },
     {
       "name": "shared_preferences_android",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.6",
+      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.7",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -297,7 +285,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.4/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -411,7 +399,7 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/web-1.1.0",
+      "rootUri": "file:///Users/medmusic/.pub-cache/hosted/pub.dev/web-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -434,16 +422,16 @@
       "languageVersion": "3.2"
     },
     {
-      "name": "ble_reciever",
+      "name": "ble_bridge_volti",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-02-23T20:30:49.769529Z",
+  "generated": "2025-03-19T07:21:45.981135Z",
   "generator": "pub",
-  "generatorVersion": "3.5.1",
-  "flutterRoot": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.1",
-  "flutterVersion": "3.24.1",
+  "generatorVersion": "3.5.4",
+  "flutterRoot": "file:///Users/medmusic/projects/toots/flutter/flutter-3.24.4",
+  "flutterVersion": "3.24.4",
   "pubCache": "file:///Users/medmusic/.pub-cache"
 }

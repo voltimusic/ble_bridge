@@ -1,38 +1,38 @@
 {
   "" : {
-    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master.dia",
-    "emit-module-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master-emit-module.d",
-    "emit-module-diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master-emit-module.dia",
-    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master.swiftdeps"
+    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master.dia",
+    "emit-module-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master-emit-module.dia",
+    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/universal_ble-master.swiftdeps"
   },
   "/Users/medmusic/.pub-cache/hosted/pub.dev/universal_ble-0.9.11/darwin/Classes/UniversalBle.g.swift" : {
-    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.swiftconstvalues",
-    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.d",
-    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.dia",
+    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.swiftconstvalues",
+    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.d",
+    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.dia",
     "index-unit-output-path" : "/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.o",
-    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.bc",
-    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.o",
-    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.swiftdeps",
-    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g~partial.swiftmodule"
+    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.bc",
+    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.o",
+    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g.swiftdeps",
+    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBle.g~partial.swiftmodule"
   },
   "/Users/medmusic/.pub-cache/hosted/pub.dev/universal_ble-0.9.11/darwin/Classes/UniversalBleHelper.swift" : {
-    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.swiftconstvalues",
-    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.d",
-    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.dia",
+    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.swiftconstvalues",
+    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.d",
+    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.dia",
     "index-unit-output-path" : "/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.o",
-    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.bc",
-    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.o",
-    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.swiftdeps",
-    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper~partial.swiftmodule"
+    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.bc",
+    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.o",
+    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper.swiftdeps",
+    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBleHelper~partial.swiftmodule"
   },
   "/Users/medmusic/.pub-cache/hosted/pub.dev/universal_ble-0.9.11/darwin/Classes/UniversalBlePlugin.swift" : {
-    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.swiftconstvalues",
-    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.d",
-    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.dia",
+    "const-values" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.swiftconstvalues",
+    "dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.d",
+    "diagnostics" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.dia",
     "index-unit-output-path" : "/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.o",
-    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.bc",
-    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.o",
-    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.swiftdeps",
-    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin~partial.swiftmodule"
+    "llvm-bc" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.bc",
+    "object" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.o",
+    "swift-dependencies" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin.swiftdeps",
+    "swiftmodule" : "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/Objects-normal/arm64/UniversalBlePlugin~partial.swiftmodule"
   }
 }

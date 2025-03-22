@@ -1,7 +1,8 @@
 import 'dart:io';
 
-import 'package:ble_reciever/safty/MacOSSecurity.dart';
-import 'package:ble_reciever/safty/SecurityWarningScreen.dart';
+
+import 'package:ble_bridge_volti/safty/MacOSSecurity.dart';
+import 'package:ble_bridge_volti/safty/SecurityWarningScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,7 +13,7 @@ import 'MidiLog.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (   !Platform.isMacOS)
+  if (Platform.isMacOS)
     {
       // ✅ Only run security checks on macOS
       String? securityError = await MacOSSecurity.runSecurityChecks();

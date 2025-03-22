@@ -4,20 +4,20 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Products/Debug/flutter_midi_command/flutter_midi_command.framework/Modules"
+    'name': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Products/Debug/flutter_midi_command/flutter_midi_command.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_midi_command.build/unextended-module.modulemap",
+      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_midi_command.build/unextended-module.modulemap",
     }]
     },
     {
     'type': 'directory',
-    'name': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Products/Debug/flutter_midi_command/flutter_midi_command.framework/Headers"
+    'name': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Products/Debug/flutter_midi_command/flutter_midi_command.framework/Headers"
     'contents': [{
       'type': 'file',
       'name': "flutter_midi_command-Swift.h",
-      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_midi_command.build/unextended-interface-header.h",
+      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_midi_command.build/unextended-interface-header.h",
     }]
     }]
 }

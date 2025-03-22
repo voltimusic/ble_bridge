@@ -1,4 +1,4 @@
-import 'package:ble_reciever/widgets/HoverableCard.dart';
+import 'package:ble_bridge_volti/widgets/HoverableCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_midi_command/flutter_midi_command.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';

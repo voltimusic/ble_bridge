@@ -1,11 +1,11 @@
 {
-    "name": "ble_reciever",
-    "short_name": "ble_reciever",
+    "name": "ble_bridge_volti",
+    "short_name": "ble_bridge_volti",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "VoltiTech inc",
+    "description": "volti music",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

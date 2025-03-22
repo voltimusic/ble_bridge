@@ -1,4 +1,4 @@
-import 'package:ble_reciever/widgets/MessageFilterDialog.dart';
+import 'package:ble_bridge_volti/widgets/MessageFilterDialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // For Clipboard
 import 'package:provider/provider.dart';

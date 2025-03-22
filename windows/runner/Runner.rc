@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "ble_reciever" "\0"
+            VALUE "CompanyName", "ca.voltitech.audio.bleReciever" "\0"
+            VALUE "FileDescription", "ble_bridge_volti" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "ble_reciever" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "ble_reciever.exe" "\0"
-            VALUE "ProductName", "ble_reciever" "\0"
+            VALUE "InternalName", "ble_bridge_volti" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 ca.voltitech.audio.bleReciever. All rights reserved." "\0"
+            VALUE "OriginalFilename", "ble_bridge_volti.exe" "\0"
+            VALUE "ProductName", "ble_bridge_volti" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

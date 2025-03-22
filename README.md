@@ -1,6 +1,6 @@
-# ble_reciever
+# ble_bridge_volti
 
-VoltiTech inc
+volti music
 
 ## Getting Started
 

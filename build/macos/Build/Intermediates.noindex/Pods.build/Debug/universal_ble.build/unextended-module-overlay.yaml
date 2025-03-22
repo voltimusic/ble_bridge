@@ -4,20 +4,20 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Products/Debug/universal_ble/universal_ble.framework/Modules"
+    'name': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Products/Debug/universal_ble/universal_ble.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/unextended-module.modulemap",
+      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/unextended-module.modulemap",
     }]
     },
     {
     'type': 'directory',
-    'name': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Products/Debug/universal_ble/universal_ble.framework/Headers"
+    'name': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Products/Debug/universal_ble/universal_ble.framework/Headers"
     'contents': [{
       'type': 'file',
       'name': "universal_ble-Swift.h",
-      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/unextended-interface-header.h",
+      'external-contents': "/Users/medmusic/projects/voltimusic/ble_bridge_volti/build/macos/Build/Intermediates.noindex/Pods.build/Debug/universal_ble.build/unextended-interface-header.h",
     }]
     }]
 }

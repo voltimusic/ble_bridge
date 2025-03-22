@@ -1,4 +1,4 @@
-import 'package:ble_reciever/widgets/buildSideNavigation.dart';
+import 'package:ble_bridge_volti/widgets/buildSideNavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_midi_command/flutter_midi_command.dart';
 import 'package:provider/provider.dart';
